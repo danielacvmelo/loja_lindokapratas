@@ -2,10 +2,10 @@ package model;
 
 public class Funcionario extends Pessoa {
 
-    private int id;
+    private Long id;
     private double salario;
 
-    public Funcionario (String nome, int idade, String endereco, String sexo, String cpf, String telefone, String email, String senha, Long id, double salario){
+    public Funcionario (Long id, String nome, int idade, String endereco, String sexo, String cpf, String telefone, String email, String senha, double salario){
         this.id = id;
         this.salario = salario;
         super nome = nome;
@@ -20,11 +20,11 @@ public class Funcionario extends Pessoa {
 
 }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

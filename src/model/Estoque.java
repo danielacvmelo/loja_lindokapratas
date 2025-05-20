@@ -2,22 +2,22 @@ package model;
 
 public class Estoque extends Pessoa {
 
-    private int id;
+    private Long id;
     private String entrada;
     private String saida;
     private int quantidade;
 
-    public Estoque (int id, String entrada, String saida, int quantidade){
+    public Estoque (Long id, String entrada, String saida, int quantidade){
         this.id = id;
         this.entrada = entrada;
         this.saida = saida;
         this.quantidade = quantidade;
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

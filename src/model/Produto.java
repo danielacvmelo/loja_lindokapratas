@@ -2,11 +2,11 @@ package model;
 
 public class Produto extends Pessoa {
 
-    private String id;
+    private Long id;
     private String descricao;
     private double valor;
 
-    public Produto (String id, String nome, String descricao, double valor, ){
+    public Produto (Long id, String nome, String descricao, double valor, ){
         this.id = id;
         this.descricao = descricao;
         this.valor = valor;
@@ -15,11 +15,11 @@ public class Produto extends Pessoa {
 
 }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

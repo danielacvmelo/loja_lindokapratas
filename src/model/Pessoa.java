@@ -9,6 +9,7 @@ public class Pessoa {
     protected String telefone;
     protected String email;
     protected String senha;
+    protected String cpf;
 
     public String getNome() {
         return nome;

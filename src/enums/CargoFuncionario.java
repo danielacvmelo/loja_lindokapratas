@@ -5,6 +5,6 @@ public enum CargoFuncionario {
     GERENTE,
     CAIXA,
     ESTOQUISTA,
-    ADMINISTRADOR
+    ADMINISTRADO
 
 }

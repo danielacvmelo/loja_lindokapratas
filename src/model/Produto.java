@@ -6,13 +6,11 @@ public class Produto extends Pessoa {
     private String descricao;
     private double valor;
 
-    public Produto (Long id, String nome, String descricao, double valor, ){
+    public Produto (Long id, String nome, String descricao, double valor){
         this.id = id;
         this.descricao = descricao;
         this.valor = valor;
         super nome = nome;
-
-
 }
 
     public Long getId() {

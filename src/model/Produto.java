@@ -10,7 +10,7 @@ public class Produto extends Pessoa {
         this.id = id;
         this.descricao = descricao;
         this.valor = valor;
-        super nome = nome;
+        setNome(nome);
 }
 
     public Long getId() {

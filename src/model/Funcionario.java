@@ -8,16 +8,14 @@ public class Funcionario extends Pessoa {
     public Funcionario (Long id, String nome, int idade, String endereco, String sexo, String cpf, String telefone, String email, String senha, double salario){
         this.id = id;
         this.salario = salario;
-        super nome = nome;
-        super idade = idade;
-        super endereco = endereco;
-        super sexo = sexo;
-        super cpf = cpf;
-        super telefone = telefone;
-        super email = email;
-        super senha = senha;
-
-
+        setNome(nome);
+        setIdade(idade);
+        setEndereco(endereco);
+        setSexo(sexo);
+        setCpf(cpf);
+        setTelefone(telefone);
+        setEmail(email);
+        setSenha(senha);
 }
 
     public Long getId() {

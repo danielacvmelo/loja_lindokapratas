@@ -4,17 +4,16 @@ public class Cliente extends Pessoa {
 
     private Long id;
 
-    public Cliente (Long id, String nome, int idade, String endereco, String sexo, String cpf, String telefone, String email, String senha){
+    public Cliente(Long id, String nome, int idade, String endereco, String sexo, String cpf, String telefone, String email, String senha) {
         this.id = id;
-        super nome = nome;
-        super idade = idade;
-        super endereco = endereco;
-        super sexo = sexo;
-        super cpf = cpf;
-        super telefone = telefone;
-        super email = email;
-        super senha = senha;
-
+        setNome(nome);
+        setIdade(idade);
+        setEndereco(endereco);
+        setSexo(sexo);
+        setCpf(cpf);
+        setTelefone(telefone);
+        setEmail(email);
+        setSenha(senha);
     }
 
 

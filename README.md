@@ -94,7 +94,13 @@ Branches adicionais:
 - `main`: branch final com a versão estável do projeto.
 
 ---
+## 📋 Organização e Tarefas
+As tarefas do projeto foram organizadas e acompanhadas em um quadro no Trello, onde é possível visualizar os cartões com as atividades atribuídas a cada integrante, o progresso de cada funcionalidade e o planejamento do projeto.
 
+Acesse o nosso Trello:
+🔗 Quadro de Tarefas no Trello - Projeto Lindoka Pratas
+
+---
 ## 💻 Como Executar o Projeto
 
 ### Pré-requisitos

@@ -3,13 +3,13 @@ package model;
 public class Pedido {
     private double valor;
     private String data;
-    private String codpedido;
+    private Long id;
     private double desconto;
 
-    public Pedido(double valor, String data, String codpedido, double desconto) {
+    public Pedido(double valor, String data, Long id, double desconto) {
         this.valor = valor;
         this.data = data;
-        this.codpedido = codpedido;
+        this.id = id;
         this.desconto = desconto;
     }
 
@@ -29,12 +29,12 @@ public class Pedido {
         this.data = data;
     }
 
-    public String getCodpedido() {
-        return codpedido;
+    public String getId() {
+        return id;
     }
 
-    public void setCodpedido(String codpedido) {
-        this.codpedido = codpedido;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public double getDesconto() {

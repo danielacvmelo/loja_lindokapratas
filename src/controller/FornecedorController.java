@@ -1,7 +1,7 @@
 package controller;
 
-import service.FornecedorService;
 import model.Fornecedor;
+import service.FornecedorService;
 
 public class FornecedorController {
     private FornecedorService fornecedorService = new FornecedorService();

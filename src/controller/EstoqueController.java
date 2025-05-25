@@ -1,5 +1,7 @@
 package controller;
 
+import service.EstoqueService;
+
 public class EstoqueController {
     private EstoqueService estoqueService = new EstoqueService();
 

@@ -2,28 +2,28 @@ package model;
 
 public class Fornecedor extends Pessoa {
 
-    private String  codfornecedor;
+    private Long id;
     private String cnpj;
     private String endereco;
     private String descricao;
     private String email;
     private String telefone;
 
-    public Fornecedor(String codfornecedor, String cnpj, String descricao) {
-        this.codfornecedor = codfornecedor;
+    public Fornecedor(Long id, String cnpj, String descricao) {
+        this.id = id;
         this.cnpj = cnpj;
         this.descricao = descricao;
-        super.endereco = endereco;
-        super.email = email;
-        super.telefone = telefone;
+        setTelefone(telefone);
+        setEmail(email);
+        setSenha(endereco);
     }
 
-    public String getCodfornecedor() {
-        return codfornecedor;
+    public String getId() {
+        return id;
     }
 
-    public void setCodfornecedor(String codfornecedor) {
-        this.codfornecedor = codfornecedor;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getCnpj() {

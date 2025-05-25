@@ -2,7 +2,7 @@
 
 ## 📖 Sobre o Projeto
 
-Este projeto foi desenvolvido por estudantes da disciplina de **Programação Orientada a Objetos** com o objetivo de criar um sistema de gerenciamento modular para a loja fictícia **Lindoka Pratas**, especializada em vendas de joias de prata.
+Este projeto foi desenvolvido por estudantes da disciplina de **Programação Orientada a Objetos** com o objetivo de criar um sistema de gerenciamento modular para a loja **Lindoka Pratas**, especializada em vendas de joias de prata.
 
 A loja enfrentava problemas com a gestão manual de dados, o que causava lentidão, falhas no controle de estoque e dificuldades com pedidos e fornecedores. Este sistema foi pensado para solucionar esses problemas por meio de uma aplicação Java organizada em camadas.
 
@@ -106,5 +106,5 @@ Branches adicionais:
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/nome-do-projeto.git
-cd nome-do-projeto
+git clone https://github.com/danielacvmelo/loja_lindokapratas
+cd loja_lindokapratas

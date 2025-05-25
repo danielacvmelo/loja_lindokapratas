@@ -99,7 +99,7 @@ Branches adicionais:
 
 ### Pré-requisitos
 
-- Java JDK 17 (ou compatível)
+- Java JDK 21 (ou compatível)
 - IntelliJ IDEA ou outro editor compatível com projetos Java
 
 ### Passos:

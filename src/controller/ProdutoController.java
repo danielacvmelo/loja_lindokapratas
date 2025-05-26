@@ -1,25 +1,31 @@
 package controller;
 
+import model.Produto;
+import service.ProdutoService;
+import java.util.List; // Import necessário para List
+
 public class ProdutoController {
     private ProdutoService produtoService = new ProdutoService();
 
-    public void adicionarProduto(String nome, double preco, int quantidade) {
-        produtoService.adicionarProduto(nome, preco, quantidade);
+    public void adicionarProduto(String nome, String descricao, double preco) {
+        produtoService.adicionarProduto(nome, descricao, preco);
     }
 
-    public void listarProdutos() {
-        for (Produto p : produtoService.listarProdutos()) {
-            System.out.println(p);
-        }
+    // Mude de 'void' para 'List<Produto>' e retorne a lista do service
+    public List<Produto> listarProdutos() {
+        return produtoService.listarProdutos();
     }
 
-    public void buscarProdutoPorId(int id) {
+    public Produto buscarProdutoPorId(Long id) {
         Produto p = produtoService.buscarProdutoPorId(id);
-        System.out.println(p != null ? p : "Produto não encontrado.");
+        return p;
     }
 
-    public void buscarProdutoPorNome(String nome) {
+    // Mude de 'void' para 'Produto' e retorne o objeto
+    public Produto buscarProdutoPorNome(String nome) {
         Produto p = produtoService.buscarProdutoPorNome(nome);
-        System.out.println(p != null ? p : "Produto não encontrado.");
+        // REMOVA a linha abaixo, a impressão será feita na main
+        // System.out.println(p != null ? p : "Produto não encontrado.");
+        return p; // Retorne o produto encontrado (ou null)
     }
 }

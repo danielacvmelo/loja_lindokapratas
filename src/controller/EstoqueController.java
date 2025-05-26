@@ -1,14 +1,16 @@
 package controller;
 
+import service.EstoqueService;
+
 public class EstoqueController {
     private EstoqueService estoqueService = new EstoqueService();
 
-    public void atualizarEstoque(int produtoId, int novaQuantidade) {
+    public void atualizarEstoque(Long produtoId, int novaQuantidade) {
         estoqueService.atualizarEstoque(produtoId, novaQuantidade);
     }
 
-    public void consultarQuantidade(int produtoId) {
-        int quantidade = estoqueService.consultarQuantidadeProduto(produtoId);
-        System.out.println("Quantidade atual do produto " + produtoId + ": " + quantidade);
+    // Renomeado para seguir o padrão de getter e retornar a quantidade
+    public int getQuantidadeProduto(Long produtoId) {
+        return estoqueService.consultarQuantidadeProduto(produtoId);
     }
 }

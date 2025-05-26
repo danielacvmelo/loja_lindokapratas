@@ -20,7 +20,6 @@ O padrão seguido foi:
 - `model`: contém as entidades e classes de domínio.
 - `service`: responsável pela lógica de negócio.
 - `controller`: faz a mediação entre o usuário (interface CLI) e a lógica do sistema.
-- `enums`: contém os tipos fixos usados por diversas entidades (ex: tipo de produto, setor, função).
 
 ---
 
@@ -35,7 +34,6 @@ O sistema permite o **cadastro, atualização, consulta e gerenciamento** dos se
 
 ### 📦 Produtos
 - Cadastro de produtos
-- Classificação por tipo (`enum`)
 - Vínculo com fornecedores
 
 ### 🛒 Pedidos
@@ -45,7 +43,6 @@ O sistema permite o **cadastro, atualização, consulta e gerenciamento** dos se
 
 ### 🧑‍💼 Funcionários
 - Cadastro de funcionários com setor e função
-- Classificação por função e setor (`enum`)
 - Listagem e atualização
 
 ### 🚚 Fornecedores
@@ -71,8 +68,6 @@ O sistema permite o **cadastro, atualização, consulta e gerenciamento** dos se
 - Clientes precisam de **CPF válido** e **senha segura** para serem cadastrados.
 - Um pedido só pode ser registrado se houver **estoque suficiente** do produto.
 - A entrada e saída de produtos atualiza automaticamente o controle de estoque.
-- Produtos são classificados obrigatoriamente por um **tipo** definido via `enum`.
-- Funcionários devem ter **setor e função definidos**, ambos usando `enum`.
 
 ---
 

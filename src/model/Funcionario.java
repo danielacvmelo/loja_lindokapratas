@@ -5,7 +5,7 @@ public class Funcionario extends Pessoa {
     private Long id;
     private double salario;
 
-    public Funcionario (Long id, String nome, int idade, String endereco, String sexo, String cpf, String telefone, String email, String senha, double salario){
+    public Funcionario(Long id, String nome, int idade, String endereco, String sexo, String cpf, String telefone, String email, String senha, double salario) {
         this.id = id;
         this.salario = salario;
         setNome(nome);
@@ -16,7 +16,7 @@ public class Funcionario extends Pessoa {
         setTelefone(telefone);
         setEmail(email);
         setSenha(senha);
-}
+    }
 
     public Long getId() {
         return id;
@@ -33,3 +33,5 @@ public class Funcionario extends Pessoa {
     public void setSalario(double salario) {
         this.salario = salario;
     }
+
+}

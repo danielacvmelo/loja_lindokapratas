@@ -6,12 +6,12 @@ public class Produto extends Pessoa {
     private String descricao;
     private double valor;
 
-    public Produto (Long id, String nome, String descricao, double valor){
+    public Produto(Long id, String nome, String descricao, double valor) {
         this.id = id;
         this.descricao = descricao;
         this.valor = valor;
         setNome(nome);
-}
+    }
 
     public Long getId() {
         return id;
@@ -36,3 +36,4 @@ public class Produto extends Pessoa {
     public void setValor(double valor) {
         this.valor = valor;
     }
+}

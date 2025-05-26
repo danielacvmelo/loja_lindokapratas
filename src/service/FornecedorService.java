@@ -6,9 +6,10 @@ import model.Fornecedor;
 
 public class FornecedorService {
     private List<Fornecedor> fornecedores = new ArrayList<>();
+    private Long idAutoIncrement = 1L;
 
-    public void adicionarFornecedor(String codFornecedor, String cnpj, String descricao) {
-        Fornecedor novoFornecedor = new Fornecedor(codFornecedor, cnpj, descricao);
+    public void adicionarFornecedor(String cnpj, String descricao, String endereco, String email, String telefone) {
+        Fornecedor novoFornecedor = new Fornecedor(idAutoIncrement++, cnpj, descricao, endereco, email, telefone);
         fornecedores.add(novoFornecedor);
         System.out.println("Fornecedor adicionado com sucesso!");
     }

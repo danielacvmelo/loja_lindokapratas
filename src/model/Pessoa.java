@@ -9,6 +9,7 @@ public class Pessoa {
     protected String telefone;
     protected String email;
     protected String senha;
+    protected String cpf;
 
     public String getNome() {
         return nome;
@@ -45,6 +46,8 @@ public class Pessoa {
     public String getCpf() {
         return cpf;
     }
+
+    public void setCpf(String cpf) { this.cpf = cpf; }
 
     public String getTelefone() {
         return telefone;
